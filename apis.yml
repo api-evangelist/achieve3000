@@ -1,13 +1,31 @@
 aid: achieve3000
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/achieve3000.png
 name: Achieve3000
-description: 'Achieve3000 is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: education. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Achieve3000 is a supplemental digital literacy solution for grades 3-12 that uses
+  adaptive technology to personalize reading instruction, delivering differentiated nonfiction texts
+  matched to each student''s Lexile reading level to build vocabulary and comprehension. Originally an
+  independent education-technology company backed by Insight Partners, Achieve3000 was acquired by McGraw
+  Hill and is now offered as "Achieve3000 Literacy" within McGraw Hill''s PreK-12 portfolio. Students and
+  educators access the platform through their district''s approved single sign-on (SSO); the product
+  publishes no public developer API, developer portal, or SDKs. This profile is maintained in the API
+  Evangelist network for discovery and demand tracking.'
 url: https://raw.githubusercontent.com/api-evangelist/achieve3000/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
+x-acquired-by: mcgraw-hill
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
@@ -16,6 +34,11 @@ modified: '2026-07-17'
 tags:
 - Company
 - Education
+- EdTech
+- Literacy
+- Reading
+- K-12
+- Adaptive Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +47,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.achieve3000.com/
+  url: https://www.achieve3000.com/
+- type: DomainSecurity
+  url: security/achieve3000-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
